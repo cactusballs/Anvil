@@ -86,6 +86,8 @@ a {
     position: relative;
     margin: 5% 0 5% 0;
     
+  
+    
 }
 
 .hero img {
@@ -94,7 +96,7 @@ a {
   object-fit: fill;
   display: block;
   z-index: 0;
-  /* filter: grayscale(80%); */
+  filter: grayscale(40%);
   
 }
 
@@ -108,6 +110,7 @@ a {
   left: 35%;
   transform: translate(-50%, -50%);
   
+  
 
 } 
 
@@ -120,11 +123,12 @@ a {
   line-height: 60px;
 }
 
-.herotext h4{
-  font-size: 2  rem;
+.herotext h3{
+  font-size: 1.5rem;
 }
 
-.about {
+
+#about {
   border-top: 1px solid rgb(57, 81,89)
 }
 .wrapper {
@@ -136,9 +140,8 @@ a {
   }
   
 .box {
-   
     border-radius: 5px;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     font-size: 0.75rem;
@@ -146,18 +149,73 @@ a {
   }
 
 .box p {
-  width:100%;
-  font-size: 2vw;
+  width:80%;
+  font-size: 1.5rem;
+  text-align: justify;
   
 }
 
 .box img {
-  width: 60%;
+  width: 40%;
   height: auto;
-  justify-self: center;
-  align-self: center;
+ 
 }
 
+.galleryTabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  max-width: 50vw;
+  margin: 0 auto;
+  transition: all 150ms linear;
+}
+
+.galleryTabs input[type="radio"] {
+  display: none;
+}
+
+.galleryTabs label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.galleryTabs label:before {
+  border: 1px solid #e3e3e3;
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+}
+
+.galleryTabs img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+
+.galleryTabs input[name="select"]:checked + label + img {
+  display: block;
+}
+
+.galleryTabs input[name="select"]:checked + label:before {
+  border: 1px solid #000;
+}
 
 
 /* media queries below */
