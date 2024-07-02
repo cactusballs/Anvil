@@ -21,6 +21,7 @@ a {
   border-bottom: 1px solid rgb(57, 81, 89);
 }
 
+/* navbar styling  */
 .navbar{
   display: flex;
   justify-content: space-between;
@@ -74,6 +75,7 @@ a {
   color: rgb(35, 58, 108);
 }
 
+/* Hero banner code  */
 .hero{
     display: block;
     margin: 15%;
@@ -92,7 +94,6 @@ a {
   filter: grayscale(40%);
   
 }
-
 /* Styling for paragraphs within the hero banner */
 
 .herotext {
@@ -135,83 +136,69 @@ a {
 .steel-products {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   margin-bottom: 100px;
   position: relative; /* Ensure positioning context for pseudo-elements */
   background-color: lightgray;
+  margin-top: 100px;
 }
 
 
 .steel-product-1 {
   grid-column: 3;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .steel-product-2 {
   grid-column: 4;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .steel-product-3 {
   grid-column: 5;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .steel-product-4 {
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 6;
+  grid-row: 1;
 }
 
-.steel-product-5 {
-  grid-column: 4;
-  grid-row: 3;
-}
-
-.steel-product-6 {
-  grid-column: 5;
-  grid-row: 3;
-}
 
 .steel-product-1,
 .steel-product-2,
 .steel-product-3,
-.steel-product-4,
-.steel-product-5,
-.steel-product-6{
+.steel-product-4{
   border: 2px hidden rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 20px; /* Add some padding */
-  margin: 15px; /* Add some margin */
+  padding: 20px; 
+  margin: 15px; 
   background-color: #f4ede4;
-  width: 310px;
-  height: auto;
+  width: 280px;
+  height: 250px;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  perspective: 1000px; /* Required for 3D effect */
-  transform-style: preserve-3d; /* Enables 3D position preservation */
+  perspective: 1000px; 
+  transform-style: preserve-3d; 
   transition-duration: 0.6s;
   transition-timing-function: ease-in-out;
   position: relative;
 }
 
-.steel-product-1 img,
+/* .steel-product-1 img,
 .steel-product-2 img,
 .steel-product-3 img,
-.steel-product-4 img,
-.steel-product-5 img,
-.steel-product-6 img{
+.steel-product-4 img{
   width: 300px;
   height: 250px;
-}
+} */
 
 .steel-product-1 h2,
 .steel-product-2 h2,
 .steel-product-3 h2,
-.steel-product-4 h2,
-.steel-product-5 h2,
-.steel-product-6 h2{
-  font-family: "Roboto", sans-serif;
+.steel-product-4 h2{
+
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
@@ -220,9 +207,7 @@ a {
 .steel-product-1 p,
 .steel-product-2 p,
 .steel-product-3 p,
-.steel-product-4 p,
-.steel-product-5 p,
-.steel-product-6 p{
+.steel-product-4 p{
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -233,9 +218,7 @@ a {
 .steel-product-1 .card-front, .steel-product-1 .card-back,
 .steel-product-2 .card-front, .steel-product-2 .card-back,
 .steel-product-3 .card-front, .steel-product-3 .card-back,
-.steel-product-4 .card-front, .steel-product-4 .card-back,
-.steel-product-5 .card-front, .steel-product-5 .card-back,
-.steel-product-6 .card-front, .steel-product-6 .card-back {
+.steel-product-4 .card-front, .steel-product-4 .card-back{
   backface-visibility: hidden; /* Hide the back face of the element */
   transform-style: preserve-3d; /* Preserve 3D */
 }
@@ -243,9 +226,7 @@ a {
 .steel-product-1 .card-front,
 .steel-product-2 .card-front,
 .steel-product-3 .card-front,
-.steel-product-4 .card-front,
-.steel-product-5 .card-front,
-.steel-product-6 .card-front {
+.steel-product-4 .card-front {
   backface-visibility: hidden;
   text-align: center;
   z-index: 2;
@@ -255,25 +236,21 @@ a {
 .steel-product-1 .card-back,
 .steel-product-2 .card-back,
 .steel-product-3 .card-back,
-.steel-product-4 .card-back,
-.steel-product-5 .card-back,
-.steel-product-6 .card-back{
+.steel-product-4 .card-back{
   transform: rotateY(180deg); /* Rotate the back initially */
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   padding: 10px;
-  /* margin-top: 50px; */
+  margin-top: 50px;
   align-content: center;
 }
 
 .steel-product-1:hover,
 .steel-product-2:hover,
 .steel-product-3:hover,
-.steel-product-4:hover,
-.steel-product-5:hover,
-.steel-product-6:hover{
+.steel-product-4:hover{
   background-color: slategray; /* Darker red background on hover */
   color: white;
 }
@@ -282,9 +259,7 @@ a {
 .steel-product-1 ul,
 .steel-product-2 ul,
 .steel-product-3 ul,
-.steel-product-4 ul,
-.steel-product-5 ul,
-.steel-product-6 ul{
+.steel-product-4 ul{
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
@@ -307,6 +282,70 @@ a {
   width: 100%;
   height: auto;
 }
+
+
+/* form */
+
+.contactForm{
+  margin-top: 200px;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height:60vh;
+}
+
+
+
+input[type=text],[type=email], textarea {
+  width: 80%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]{
+  grid-column: 1/ -1;
+  grid-row: 1;
+}
+
+input[type=email]{
+  grid-column: 1/ -1;
+  grid-row: 2;
+}
+
+textarea{
+  grid-column: 1/ -1;
+  grid-row: 3/5;
+}
+
+.ourEmail{
+  grid-column: 2 /3 ;
+  grid-row: 1;
+}
+
+.ourNumber{
+  grid-column: 2 / 3 ;
+  grid-row: 2;
+}
+
+.ourEmail{
+  grid-column: 2 / 3 ;
+  grid-row: 3;
+}
+
+
+
+/* footer */
+
+footer{
+  height: 200px;
+}
+
 
 
 /* media queries below */
