@@ -5,6 +5,7 @@ html{
   font-size: 14px;
   font-family: 'Spartan', 'Montserrat', 'Futura', sans-serif;
   background-color: rgb(237, 237, 237);
+  overflow-x: hidden;
 }
 
 li {
@@ -285,6 +286,7 @@ a {
 
 
 /* form */
+/* form  */
 
 .contactForm{
   margin-top: 200px;
@@ -354,7 +356,7 @@ footer{
 
   .nav-menu {
     position: fixed;
-    left: -100%;
+    left: -107%;
     top: 5rem;
     flex-direction: column;
     background-color: #fff;
@@ -363,6 +365,7 @@ footer{
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0,0,0,0.5);
+    z-index: 2;
 
   }
 
