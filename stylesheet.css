@@ -187,13 +187,13 @@ a {
   position: relative;
 }
 
-/* .steel-product-1 img,
+.steel-product-1 img,
 .steel-product-2 img,
 .steel-product-3 img,
 .steel-product-4 img{
-  width: 300px;
-  height: 250px;
-} */
+  width: 200px;
+  height: 150px;
+}
 
 .steel-product-1 h2,
 .steel-product-2 h2,
@@ -322,22 +322,31 @@ input[type=email]{
 
 textarea{
   grid-column: 1/ -1;
-  grid-row: 3/5;
-}
-
-.ourEmail{
-  grid-column: 2 /3 ;
-  grid-row: 1;
-}
-
-.ourNumber{
-  grid-column: 2 / 3 ;
-  grid-row: 2;
-}
-
-.ourEmail{
-  grid-column: 2 / 3 ;
   grid-row: 3;
+}
+
+.submitButton {
+  grid-column: 1/-1;
+  grid-row: 4;
+}
+
+#ourEmail{
+  grid-column: 2/3 ;
+  grid-row: 1;
+  margin-top: 10vh;
+}
+
+#ourNumber{
+  grid-column: 2/3 ;
+  grid-row: 1;
+  margin-top: 20vh;
+ 
+}
+
+#socials{
+  grid-column: 2/3 ;
+  grid-row: 1;
+  margin-top: 30vh;
 }
 
 
