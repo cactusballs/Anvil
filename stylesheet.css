@@ -270,19 +270,6 @@ a {
 
 
 
-/* image gallery code  */
-.masonry {
-  column-count: 3;
-  column-gap: 10px;
-}
-.masonry-item {
-  break-inside: avoid;
-  margin-bottom: 10px;
-}
-.masonry-item img {
-  width: 100%;
-  height: auto;
-}
 
 
 /* form */
@@ -361,8 +348,30 @@ footer{
 
 /* media queries below */
 
-@media only screen and (max-width: 768px){
+@media (max-width: 1200px) {
 
+  html{
+    overflow-x: hidden;
+  }
+  .steel-products {
+    grid-template-columns: repeat(4, 1fr); /* Changed to 4 columns */
+    gap: 15px;
+  }
+
+  .steel-product-1,
+  .steel-product-2,
+  .steel-product-3,
+  .steel-product-4 {
+    width: 200px; /* Adjusted width */
+    height: 200px; /* Adjusted height */
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  html{
+    overflow-x: hidden;
+  }
   .nav-menu {
     position: fixed;
     left: -107%;
@@ -421,4 +430,34 @@ footer{
   .hero h1{
   font-size:6vw;
   }
+  .steel-products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .steel-product-1,
+  .steel-product-2,
+  .steel-product-3,
+  .steel-product-4 {
+    width: 100%;
+    height: auto;
+  }
 } 
+/* Mobile media queries */
+@media (max-width: 480px) {
+   html{
+    overflow-x: hidden;
+  }
+  .steel-products {
+    grid-template-columns: repeat(1, 1fr);
+    gap:15px;
+  }
+
+  .steel-product-1,
+  .steel-product-2,
+  .steel-product-3,
+  .steel-product-4 {
+    width: 400%;
+    height: auto;
+  }
+}
