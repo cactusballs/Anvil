@@ -136,32 +136,31 @@ a {
 /* cards */
 .steel-products {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   margin-bottom: 100px;
-  position: relative; /* Ensure positioning context for pseudo-elements */
   background-color: lightgray;
   margin-top: 100px;
 }
 
 
 .steel-product-1 {
-  grid-column: 3;
+  grid-column: 1;
   grid-row: 1;
 }
 
 .steel-product-2 {
-  grid-column: 4;
+  grid-column: 2;
   grid-row: 1;
 }
 
 .steel-product-3 {
-  grid-column: 5;
+  grid-column: 3;
   grid-row: 1;
 }
 
 .steel-product-4 {
-  grid-column: 6;
+  grid-column: 4;
   grid-row: 1;
 }
 
@@ -175,8 +174,8 @@ a {
   padding: 20px; 
   margin: 15px; 
   background-color: #f4ede4;
-  width: 280px;
-  height: 250px;
+  width: 18vw;
+  height: 50vh;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
