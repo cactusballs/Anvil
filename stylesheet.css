@@ -1,3 +1,4 @@
+
 body {
     padding: 0;
     box-sizing: border-box;
@@ -146,52 +147,68 @@ body {
     font-weight: 400;
 }
 
+
+
 /* Contact Form */
 .contactForm {
-    margin-top: 25vh;
-    background-color:  lightgray;
-    font-size: 1em;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    height: 60vh;
+  margin-top: 25vh;
+  background-color: lightgray;
+  font-size: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto;
+  gap: 10px;
+  height: auto;
+  padding: 20px;
+  align-items: center;
 }
 
-.contactForm p {
-  grid-column: 2;
-}
-
-input[type=text],
-[type=email],
-textarea {
-    width: 80%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=text] {
-    grid-column: 1 / -1;
-    grid-row: 1;
-}
-
-input[type=email] {
-    grid-column: 1 / -1;
-    grid-row: 2;
-}
-
-textarea {
-    grid-column: 1 / -1;
-    grid-row: 3;
-}
-
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea,
 #submitButton {
-    grid-column: 1 / -1;
-    grid-row: 4;
+  margin-top: 3%;
+  grid-column: 1 ; 
+  width: 80%; 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 6px 0 16px;
+  resize: vertical;
+}
+
+.contactForm #submitButton {
+  align-self: start; 
+}
+
+.ourContact {
+  grid-column: 2 /2 ; 
+  padding-left: 20px;
+  align-self: start ; 
+  
+}
+
+.ourContact p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .contactForm {
+      grid-template-columns: 1fr; 
+      height: auto;
+  }
+
+  .contactForm input[type="text"],
+  .contactForm input[type="email"],
+  .contactForm textarea {
+      width: 100%; 
+  }
+
+  .contactForm p {
+    margin-bottom: 10px; /* Add margin below <p> elements */
+    align-self: auto; /* Default vertical alignment on mobile */
+}
 }
 
 
