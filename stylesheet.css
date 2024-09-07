@@ -7,25 +7,13 @@ body {
     overflow-x: hidden;
 }
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(67, 70, 75);
-}
-
-.header {
-    border-bottom: 1px solid rgb(57, 81, 89);
-}
-
 /* Hero Section */
 .hero {
     display: block;
     margin: 5% 0;
     box-sizing: border-box;
     position: relative;
+    border-bottom: 1px solid rgb(57, 81, 89);
 }
 
 .hero img {
@@ -46,28 +34,62 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.herotext p {
-    font-size: 2rem;
-}
 
 .herotext h1 {
     font-size: 8rem;
     color: rgb(237, 237, 237);
-    line-height: 60px;
 }
 
-.herotext h3 {
-    font-size: 1.5rem;
+.herotext p {
+  font-size: 1.2  rem;
 }
 
 /* About Section */
+
 #about {
-    border-top: 1px solid rgb(57, 81, 89);
-    font-size: 1.5rem;
-    width: 100%;
-    color: rgb(35, 48, 61);
-    text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto;
+  font-size: 1.2rem;
+  color: rgb(35, 48, 61);
+  text-align: justify;
+  align-items: center; 
+  grid-gap: 20px; 
+  padding: 20px;
 }
+
+#about h2 {
+  margin-top: 2vh;
+  margin-left: 2vw;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#about p {
+  width: 60vw;
+  margin-left: 2vw;
+  columns: 1;
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+
+@media (max-width: 768px) {
+  #about {
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto auto; 
+  }
+
+  #about p {
+    width: 90vw; 
+    margin-left: 0; 
+  }
+
+  #about h2 {
+    margin-left: 0; 
+  }
+}
+
+
 
 /* Services Section */
 .steel-products {
@@ -126,12 +148,17 @@ a {
 
 /* Contact Form */
 .contactForm {
-    margin-top: 200px;
-    background-color: antiquewhite;
+    margin-top: 25vh;
+    background-color:  lightgray;
+    font-size: 1em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     height: 60vh;
+}
+
+.contactForm p {
+  grid-column: 2;
 }
 
 input[type=text],
@@ -162,10 +189,12 @@ textarea {
     grid-row: 3;
 }
 
-.submitButton {
+#submitButton {
     grid-column: 1 / -1;
     grid-row: 4;
 }
+
+
 
 /* Footer */
 footer {
