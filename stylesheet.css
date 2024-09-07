@@ -153,11 +153,10 @@ body {
 .contactForm {
   margin-top: 25vh;
   background-color: lightgray;
-  font-size: 1em;
+  font-size: 1.2em;
   display: grid;
   grid-template-columns: 1fr 1fr; 
   grid-template-rows: auto auto;
-  gap: 10px;
   height: auto;
   padding: 20px;
   align-items: center;
@@ -165,8 +164,8 @@ body {
 
 .contactForm input[type="text"],
 .contactForm input[type="email"],
-.contactForm textarea,
-#submitButton {
+.contactForm textarea
+{
   margin-top: 3%;
   grid-column: 1 ; 
   width: 80%; 
@@ -175,23 +174,30 @@ body {
   border-radius: 4px;
   box-sizing: border-box;
   margin: 6px 0 16px;
-  resize: vertical;
 }
 
 .contactForm #submitButton {
   align-self: start; 
+  margin-top: 3%;
+  grid-column: 1 ; 
+  width: 10vw; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .ourContact {
-  grid-column: 2 /2 ; 
-  padding-left: 20px;
-  align-self: start ; 
+  grid-column: 2 ;
+  margin-top: -20%;
+  padding: 5px;
+}
+
+.ourContact a,
+.ourContact p {
+  font-size: 1.2em;
   
 }
 
-.ourContact p {
-  margin: 0;
-}
 
 @media (max-width: 768px) {
   .contactForm {
