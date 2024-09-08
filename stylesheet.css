@@ -12,7 +12,6 @@ body {
 
 .navbar{
   background-image: url('images/backgroundImg.jpg') ;
-  filter: grayscale();
   font-size: 1.4em;
 }
 
@@ -35,7 +34,7 @@ body {
   object-fit: cover; 
   display: block;
   z-index: 0;
-  filter: grayscale(40%);
+  filter: grayscale(80%);
 }
 
 .herotext {
@@ -50,13 +49,13 @@ body {
 }
 
 .herotext h1 {
-  font-size: 8vw; 
+  font-size: 7vw; 
   color: rgb(237, 237, 237);
   margin: 0;
 }
 
 .herotext p {
-  font-size: 2vw; 
+  font-size: 1vw; 
   margin-top: 1vh;
 }
 
