@@ -10,40 +10,44 @@ body {
 
 /* Hero Section */
 .hero {
-    display: block;
-    margin: 5% 0;
-    box-sizing: border-box;
-    position: relative;
-    border-bottom: 1px solid rgb(57, 81, 89);
+  display: block;
+  margin: 5% 0;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid rgb(57, 81, 89);
 }
 
 .hero img {
-    width: 100%;
-    height: 700px;
-    object-fit: fill;
-    display: block;
-    z-index: 0;
-    filter: grayscale(40%);
+  width: 100%;
+  max-height: 60vh; 
+  object-fit: cover; 
+  display: block;
+  z-index: 0;
+  filter: grayscale(40%);
 }
 
 .herotext {
-    color: rgb(237, 237, 237);
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
+  color: rgb(237, 237, 237);
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: left; 
+  width: 90vw;
 }
 
-
 .herotext h1 {
-    font-size: 8rem;
-    color: rgb(237, 237, 237);
+  font-size: 8vw; 
+  color: rgb(237, 237, 237);
+  margin: 0;
 }
 
 .herotext p {
-  font-size: 1.2  rem;
+  font-size: 2vw; 
+  margin-top: 1vh;
 }
+
 
 /* About Section */
 
@@ -92,60 +96,6 @@ body {
 
 
 
-/* Services Section */
-.steel-products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    margin-bottom: 100px;
-    background-color: lightgray;
-    margin-top: 100px;
-}
-
-.steel-product-1,
-.steel-product-2,
-.steel-product-3,
-.steel-product-4 {
-    border: 2px hidden rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 20px;
-    margin: 15px;
-    background-color: #f4ede4;
-    width: 18vw;
-    height: 50vh;
-    text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    transition-duration: 0.6s;
-    transition-timing-function: ease-in-out;
-    position: relative;
-}
-
-.steel-product-1 img,
-.steel-product-2 img,
-.steel-product-3 img,
-.steel-product-4 img {
-    width: 200px;
-    height: 150px;
-}
-
-.steel-product-1 h2,
-.steel-product-2 h2,
-.steel-product-3 h2,
-.steel-product-4 h2 {
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.steel-product-1 p,
-.steel-product-2 p,
-.steel-product-3 p,
-.steel-product-4 p {
-    font-size: 18px;
-    font-weight: 400;
-}
 
 
 
@@ -195,13 +145,14 @@ body {
 .ourContact a,
 .ourContact p {
   font-size: 1.2em;
-  
+  text-decoration: none;
 }
 
 
 @media (max-width: 768px) {
   .contactForm {
       grid-template-columns: 1fr; 
+      grid-template-rows: auto;
       height: auto;
   }
 
@@ -211,9 +162,12 @@ body {
       width: 100%; 
   }
 
-  .contactForm p {
-    margin-bottom: 10px; /* Add margin below <p> elements */
-    align-self: auto; /* Default vertical alignment on mobile */
+  .ourContact {
+    margin-bottom: 10px; 
+    justify-self: start; 
+    grid-column: 1;
+    grid-row: auto;
+    margin-top: 10%;
 }
 }
 
@@ -226,33 +180,3 @@ footer {
     padding: 50px 0;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .steel-products {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-    }
-
-    .steel-product-1,
-    .steel-product-2,
-    .steel-product-3,
-    .steel-product-4 {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .hero {
-        margin-top: 60%;
-    }
-
-    .herotext {
-        top: 60%;
-    }
-
-    .steel-products {
-        display: block;
-        padding: 10px;
-    }
-}

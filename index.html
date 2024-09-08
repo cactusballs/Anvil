@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anvil Design & Fabrication</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" defer></script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="stylesheet.css" type="text/css" rel="stylesheet">
     <script src="script.js" defer></script>
@@ -54,47 +56,55 @@
         </p>
       </div>
 
-      <section id="products" class="products">
-        <div class="steel-products">
-          <div class="steel-product-1">
-            <div class="card-front">
-              <img src="images/blackGate.JPG" alt="Photo of black gate">
-              <p>Security</p>
-            </div>
-            <div class="card-back">
-              <p>We offer a range of stylish gates and railings to help your home and business stay secure while looking fresh</p>
-            </div>
-          </div>
-          <div class="steel-product-2">
-            <div class="card-front">
-              <img src="images/IndoorStairs.JPG" alt="Photo of steel stairs">
-              <p>Staircases</p>
-            </div>
-            <div class="card-back">
-              <p>We build bomb proof staircases that are custom measured, built, and fitted, offering a range of colors and finishes.</p>
+      <section id="productCards" class="productCards container">
+        <div class="row">
+          <!-- Security -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="images/blackGate.JPG" alt="Photo of black gates">
+              <div class="card-body">
+                <h5 class="card-title">Security</h5>
+                <p class="card-text">We offer a range of stylish gates and railings to help your home and business stay secure while looking fresh.</p>
+                <a href="#" class="btn btn-primary">Security</a>
+              </div>
             </div>
           </div>
-          <div class="steel-product-3">
-            <div class="card-front">
-              <img src="images/railings.JPG" alt="Photo of hand railings">
-              <p>Balustrades & Handrails</p>
-            </div>
-            <div class="card-back">
-              <p>We've learned the best techniques in fabrication to bring personality to your project. We can custom build balconies, balustrades & handrails.</p>
+          <!-- Staircases -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="images/IndoorStairs.JPG" alt="Photo of steel staircases">
+              <div class="card-body">
+                <h5 class="card-title">Staircases</h5>
+                <p class="card-text">We build bomb-proof staircases that are custom measured, built, and fitted, offering a range of colors and finishes.</p>
+                <a href="#" class="btn btn-primary">Staircases</a>
+              </div>
             </div>
           </div>
-          <div class="steel-product-4">
-            <div class="card-front">
-              <img src="images/hinges.JPG" alt="Photo of giant steel hinges">
-              <p>Bespoke</p>
+          <!-- Balustrades and handrails -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="images/railings.JPG" alt="Photo of railings">
+              <div class="card-body">
+                <h5 class="card-title">Balustrades & Handrails</h5>
+                <p class="card-text">We custom-build balconies, balustrades & handrails to bring personality to your project.</p>
+                <a href="#" class="btn btn-primary">Balustrades & Handrails</a>
+              </div>
             </div>
-            <div class="card-back">
-              <p>From fully equipped bars and pizza ovens to stylish pergolas, tables, and chairs, we collaborate with you to bring your vision to life and ensure it endures.</p>
+          </div>
+          <!-- Bespoke -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="card" style="width: 100%;">
+              <img class="card-img-top" src="images/SmallBeer.JPG" alt="Photo of railings">
+              <div class="card-body">
+                <h5 class="card-title">Bespoke</h5>
+                <p class="card-text">From fully equipped bars and pizza ovens to desks and chairs, we bring your vision to life and ensure it endures.</p>
+                <a href="#" class="btn btn-primary">Bespoke</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
+      
       <div id="contact" class="contactForm">
         <form action="https://api.web3forms.com/submit" method="POST">
           <h2>Get in touch...</h2>
@@ -113,12 +123,12 @@
           <textarea placeholder="Let us know what you need..." name="message"></textarea>
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
           <input type="hidden" name="redirect" value="confirmation page/confirmation.html">
-          <button id="submitButton" type="submit">Submit Form</button>
+          <button id="submitButton" type="submit">Send</button>
         </form>
         <div class="ourContact">
         <a href="mailto:lewis@anvilfabrication.co.uk" >lewis@anvilfabrication.co.uk</a>
         <p >07917536169</p>
-        <p>socials</p>
+        <a href="https://www.instagram.com/anvil_fabrication?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
       </div>
       </div>
 
