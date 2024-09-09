@@ -17,6 +17,11 @@ html{
   color: white !important; /* Set text color to white */
 }
 
+#heading{
+  margin: 5%;
+  text-align: center;
+
+}
 /* image gallery code  */
 .masonry {
   column-count: 3;
