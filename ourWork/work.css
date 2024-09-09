@@ -7,11 +7,22 @@ html{
   overflow-x: hidden;
 }
 
+.navbar{
+  background-image: url('images/backgroundImg.jpg') ;
+  font-size: 1.4em;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; /* Set text color to white */
+}
 
 /* image gallery code  */
 .masonry {
   column-count: 3;
   column-gap: 10px;
+  width: 80%;
+  margin-left: 10%;
 }
 .masonry-item {
   break-inside: avoid;
@@ -20,4 +31,13 @@ html{
 .masonry-item img {
   width: 100%;
   height: auto;
+}
+
+/* Footer */
+footer {
+  height: 200px;
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('images/backgroundImg.jpg') ;
+  color: white;
 }
