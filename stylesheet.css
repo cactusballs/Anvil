@@ -122,7 +122,7 @@ body {
   }
 
   .hero {
-    height: 40vh;
+    height: 60vh;
   }
 
   .title-section h1 {
@@ -137,7 +137,7 @@ body {
     font-size: 3vw;
   }
   #about{
-    bottom: 2%;
+    bottom: 5%;
     padding: 0%
   }
   #about h3 {
@@ -147,6 +147,8 @@ body {
   #about p {
     font-size: 1rem;
   }
+
+
 }
 
 /* product carousel */
@@ -278,13 +280,13 @@ body {
 
 .ourContact p,
 .ourContact a {
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   margin-bottom: 3vh;
 }
 
 .ourContact h6{
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .ourContact a:hover {
@@ -297,8 +299,10 @@ body {
     align-items: center;
   }
 
-  .contactForm, .ourContact {
-    width: 100%;
+
+  .contactForm, 
+  .ourContact {
+    width: 110%;
     text-align: center;
   }
 
