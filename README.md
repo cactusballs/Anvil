@@ -1,14 +1,13 @@
 #Anvil Design & Fabrication 
 
-to do 
-- [ ] change Gallery from CSS to JS and crop images
-- [ ] Add a contact form
+
 - [ ] accessability
-- [ ] Testiomonials
-- [ ] Links to insta etc
-- [ ] overall make it look more professional 
+- [ ] fix Reviews
+- [ ] Links to insta and facebook with icons 
+- [ ]  Add in logo 
+- [ ] Update photos (waiting on Lewis)
 
 
-## A build for an independent deisgn and fabrication business, using web3forms for form handling and offering minimal need for updating. 
+## A build for an independent design and fabrication business, using web3forms for form handling and offering minimal need for updating. 
 
  https://cactusballs.github.io/Anvil/
